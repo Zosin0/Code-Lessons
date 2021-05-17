@@ -1,2 +1,2 @@
-# exercicios
-códigos das aulas
+# Lessons
+Learning C++
