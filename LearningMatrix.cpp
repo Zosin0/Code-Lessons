@@ -1,6 +1,7 @@
+// Learning about matrix in cpp
 #include <iostream>
 using namespace std;
-/*
+
 int main(){
     int x[9] = {-3, 5, -8, 1, -10, -56, 35, -15, 95};
     int numAtual;
@@ -81,7 +82,7 @@ int main (){
 		
 		}
 	}
-	cout << "A posicao do maiorzao e:" << endl<< "linha:"<< lm << endl<< "coluna: " << cm;
+	cout << "A posicao do maiorzao e:" << endl << "linha:"<< lm << endl<< "coluna: " << cm;
 }
-*/
+
 
