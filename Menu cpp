@@ -1,3 +1,4 @@
+// I did a menu in cpp with the exam problems
 #include <iostream>
 
 using namespace std;
@@ -10,22 +11,22 @@ void menu()
 		switch (c)
 		{
 			case 1:
-				cout << "Insira dois números para comparar: "<< "\n";
+				cout << "Insira dois nÃºmeros para comparar: "<< "\n";
 				int x,y;
 				cin >> x;
 				cin >> y;
 			{
 				if (x == y)
 			{
-					cout << x << " é igual a "<< y;
+					cout << x << " Ã© igual a "<< y;
 			}
 				else if (x > y)
 			{
-					cout << x << " é maior que "<< y ;
+					cout << x << " Ã© maior que "<< y ;
 			}
 				else 
 			{
-					cout << x << " é menor que " << y;
+					cout << x << " Ã© menor que " << y;
 			}	
 				menu ();
 				break;
@@ -34,7 +35,7 @@ void menu()
 			case 2:
 			{
 				int n;
-				cout << "Insira um número que deseja realizar a tabuada (0-20): "<< "\n";
+				cout << "Insira um nÃºmero que deseja realizar a tabuada (0-20): "<< "\n";
 				cin >> n;
 				while (0<n && n<=20)
 		{
@@ -52,7 +53,7 @@ void menu()
 					cout<< "--------------------------------";
 				break;
 				if (n<0 || n>20)
-					cout << "Insira um número válido!"<< "\n";
+					cout << "Insira um nÃºmero vÃ¡lido!"<< "\n";
 		}
 				menu ();
 				break;
@@ -61,7 +62,7 @@ void menu()
 			
 			case 3:
 			{
-				string frase = "Não irei passar na prova";
+				string frase = "NÃ£o irei passar na prova";
 				frase.erase(0,3);
 				cout << frase;
 				menu ();
@@ -79,15 +80,15 @@ void menu()
 			case 5:
 			{
 				int n;
-				cout<< "Insira um número para conferir se é par ou ímpar: "<< "\n";
+				cout<< "Insira um nÃºmero para conferir se Ã© par ou Ã­mpar: "<< "\n";
 				cin >> n;
 				if (n=0 || n % 2==0)	
 		{
-					cout << "O número escolhido é par!"<< "\n";
+					cout << "O nÃºmero escolhido Ã© par!"<< "\n";
 		}
 				else 
 		{
-					cout << "O número escolhido é ímpar!"<< "\n";
+					cout << "O nÃºmero escolhido Ã© Ã­mpar!"<< "\n";
 		}
 				menu ();
 				break;
@@ -95,33 +96,33 @@ void menu()
 			case 6:
 			{
 				float n1,n2,n3,media;
-				cout << "Insira as suas três notas, de 1 a 3 respectivamente: " << "\n";
+				cout << "Insira as suas trÃªs notas, de 1 a 3 respectivamente: " << "\n";
 	
 				cin >> n1;
 				cin >> n2;
 				cin >> n3;
 				media = (n1*1 + n2*3 + n3*6)/10;
-				cout << "Sua média é: " << media << "\n";
+				cout << "Sua mÃ©dia Ã©: " << media << "\n";
 	
 				if (0 < media && media < 2){
-    				cout << "Sua menção é II!"<< "\n";
-    				cout << "Você reprovou!";
+    				cout << "Sua menÃ§Ã£o Ã© II!"<< "\n";
+    				cout << "VocÃª reprovou!";
 		}
 				if (2 <= media && media < 5){
-    				cout << "Sua menção é MI!"<< "\n";
-    				cout << "Você reprovou!";
+    				cout << "Sua menÃ§Ã£o Ã© MI!"<< "\n";
+    				cout << "VocÃª reprovou!";
 		}
 				if (5 <= media && media< 7){
-    				cout << "Sua menção é MM!"<< "\n";
-    				cout << "Você reprovou!";
+    				cout << "Sua menÃ§Ã£o Ã© MM!"<< "\n";
+    				cout << "VocÃª reprovou!";
  		} 
 				if (7 <= media && media < 9){
-					cout << "Sua menção é MS!"<< "\n";
-    				cout << "Você foi aprovado!";
+					cout << "Sua menÃ§Ã£o Ã© MS!"<< "\n";
+    				cout << "VocÃª foi aprovado!";
 		}
 				if (9 <= media){
-					cout << "Sua menção é SS!"<< "\n";
-    				cout << "Você foi aprovado!";
+					cout << "Sua menÃ§Ã£o Ã© SS!"<< "\n";
+    				cout << "VocÃª foi aprovado!";
 				menu ();
 				break;
 		}
@@ -129,13 +130,13 @@ void menu()
 			case 7:
 			{
 				int n,n1;
-				cout << "Insira dois números para realizar as operações básicas: " << "\n";
+				cout << "Insira dois nÃºmeros para realizar as operaÃ§Ãµes bÃ¡sicas: " << "\n";
 				cin >> n;
 				cin >> n1;
-				cout << "A soma dos números é: "<< (n + n1) << "\n";
-				cout << "A subtração dos números é: "<< (n - n1) << "\n";
-				cout << "A multiplicação dos números é: "<< (n * n1) << "\n";	
-				cout << "A divisão dos números é: "<< (n/n1) << "\n"; 
+				cout << "A soma dos nÃºmeros Ã©: "<< (n + n1) << "\n";
+				cout << "A subtraÃ§Ã£o dos nÃºmeros Ã©: "<< (n - n1) << "\n";
+				cout << "A multiplicaÃ§Ã£o dos nÃºmeros Ã©: "<< (n * n1) << "\n";	
+				cout << "A divisÃ£o dos nÃºmeros Ã©: "<< (n/n1) << "\n"; 
 				menu ();
 				break;
 		}
@@ -146,7 +147,7 @@ void menu()
 				cout << "Me informe seu nome e ano em que nasceu:"<< "\n";
     			cin >> nome;
     			cin >> ano;
-				cout << "Seu nome é "<< nome << " e você tem " << (2021 - ano) << " anos!"<< "\n";
+				cout << "Seu nome Ã© "<< nome << " e vocÃª tem " << (2021 - ano) << " anos!"<< "\n";
 				menu ();
 				break;
 		}			
