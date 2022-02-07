@@ -1,4 +1,9 @@
-/*
+// 1st part of the code: Enter the year you were born and the code will return your age;
+// 2nd part of the code: Enter a number between (1-9) and the code will return the multiplication table of this number;
+// 3rd part of the code: Enter a grade you had and it will return the feedback of this grade;
+// 4th part of the code: Enter two numbers and it will return the sum of these numbers;
+// 5th part of the code: Enter two ages and it will return the average of them.
+
 #include <iostream>
 using namespace std;
  
@@ -10,7 +15,7 @@ int main(){
     cout << "Sua idade e: " << idade << endl;
 
     if (idade < 19){
-        cout<< "Voce e criança/adolescente! ";
+        cout<< "Voce e crianÃ§a/adolescente! ";
     }
     else if (idade >= 19 && idade <60){
         cout << "Voce e adulto!";
@@ -21,7 +26,7 @@ int main(){
 }
 		int main(){
 			int n;
-				cout << "Insira um número que deseja realizar a tabuada (1-9): "<< "\n";
+				cout << "Insira um nÃºmero que deseja realizar a tabuada (1-9): "<< "\n";
 				cin >> n;
 				while (0<n && n<=9){	
 				{
@@ -39,7 +44,7 @@ int main(){
 					cout<< "--------------------------------";
 				break;
 				if (n<0 || n>9)
-					cout << "Insira um número válido!"<< "\n";
+					cout << "Insira um nÃºmero vÃ¡lido!"<< "\n";
 	}
 }
 
@@ -48,7 +53,7 @@ int main(){
 
 int main(){ 
     char m;
-    cout<< "Qual foi a sua mençao na disciplina LP? (A-F)"<< endl;
+    cout<< "Qual foi a sua menÃ§ao na disciplina LP? (A-F)"<< endl;
     cin >> m ;
     switch (m ){
         case 'A':
@@ -70,7 +75,7 @@ int main(){
             cout<< "Sem rendimento";
             break;
         default:
-            cout<< "Insira uma mençao valida";
+            cout<< "Insira uma menÃ§ao valida";
     }	
 
 	int main(){
